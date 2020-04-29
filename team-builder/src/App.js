@@ -5,23 +5,9 @@ import MemberCard from "./Components/MemberCard/MemberCard";
 import Form from "./Components/Form/Form";
 
 function App() {
-  const [membersList, setMembersList] = useState([
-    {
-      firstName: "James",
-      lastName: "Leyden",
-      age: 23,
-      gender: "Male",
-      isEditing: true
-    }
-  ]);
+  const [membersList, setMembersList] = useState([]);
 
-  const [memberToEdit, setMemberToEdit] = useState({
-    firstName: "",
-    lastName: "",
-    age: "",
-    gender: "",
-    isEditing: false
-  });
+  const [memberToEdit, setMemberToEdit] = useState({});
 
   const addMember = member => setMembersList([...membersList, member]);
 
